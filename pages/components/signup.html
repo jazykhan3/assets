@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section
+      id="signup"
+      class="mx-auto top-0 bg-white flex flex-col gap-y-16 items-center relative mt-16 w-full md:max-w-3xl p-6 lg:px-8"
+      aria-label="Global"
+    >
+      <div class="flex flex-col gap-12 items-center justify-center">
+        <div
+          class="flex w-full flex-col md:flex-row justify-center items-center gap-10"
+        >
+          <h1
+            class="font-nothing mt-1 tracking-normal text-white mix-blend-difference font-bold text-5xl md:text-7xl uppercase"
+          >
+            Sign up
+          </h1>
+
+          <h1
+            class="font-clash tracking-normal text-white mix-blend-difference font-bold text-5xl md:text-8xl uppercase"
+          >
+            Form
+          </h1>
+        </div>
+
+        <span class="md:text-center px-2">
+          To apply, simply fill out the form below to share more about yourself,
+          and we'll reach out with the next steps.
+        </span>
+      </div>
+
+      <div class="grid grid-cols-2 relative w-full gap-5">
+        <div class="col-span-2">
+          <label>Who are you</label>
+
+          <div class="mt-3">
+            <div class="">
+              <nav class="isolate flex gap-x-4" aria-label="Tabs">
+                <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
+                <button
+                  id="player"
+                  class="text-gray-900 active group text-white relative min-w-0 flex-1 overflow-hidden py-4 px-4 text-center text-sm font-medium focus:z-10"
+                  aria-current="page"
+                >
+                  <span>Player</span>
+                </button>
+                <button
+                  id="sponsor"
+                  class="text-gray-500 border-2 border-purple hover:text-gray-700 group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center text-sm font-medium focus:z-10"
+                >
+                  <span>Sponsor</span>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-2 gap-5 flex flex-col" id="signup-player">
+          <div class="flex flex-col col-span-2">
+            <label>Name</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray active:border-purple active:ring-purple"
+              placeholder="Type your name"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Email</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="Type your email"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Phone number</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="+XXXX XXX XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Last club</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="+XXXX XXX XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Age</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Which industries do you want to learn more about?</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>What would you say you’re good at?</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>How did you find out about pathways?</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div
+            class="col-span-2 mt-8 md:flex md:justify-center md:items-center"
+          >
+            <button
+              type="button"
+              class="inline-flex items-center w-full md:w-auto items-center justify-center gap-x-2 bg-purple px-4 py-4 text-sm font-normal text-white hover:bg-purple_dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Send form
+            </button>
+          </div>
+        </div>
+
+        <div class="col-span-2 gap-5 hidden flex flex-col" id="signup-sponsor">
+          <div class="flex flex-col col-span-2">
+            <label>Name</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray active:border-purple active:ring-purple"
+              placeholder="Type your name"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Email</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="Type your email"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Phone number</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="+XXXX XXX XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Last club</label>
+
+            <input
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="+XXXX XXX XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Age</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>Which industries do you want to learn more about?</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>What would you say you’re good at?</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div class="flex flex-col col-span-2">
+            <label>How did you find out about pathways?</label>
+
+            <input
+              type="number"
+              class="py-4 px-4 border-2 mt-2 border-gray focus:border-purple focus:ring-purple"
+              placeholder="XXX"
+            />
+          </div>
+
+          <div
+            class="col-span-2 mt-8 md:flex md:justify-center md:items-center"
+          >
+            <button
+              type="button"
+              class="inline-flex items-center w-full md:w-auto items-center justify-center gap-x-2 bg-purple px-4 py-4 text-sm font-normal text-white hover:bg-purple_dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Send form
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

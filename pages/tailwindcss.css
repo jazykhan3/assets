@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nothing+You+Could+Do&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  scroll-behavior: smooth !important;
+}
+.bannerImage {
+  height: 49rem;
+  width: 41.5rem;
+  top: 0;
+  background: url(../assets/banner.jpg) lightgray 0px -140.651px / 100% 124.485% no-repeat;
+  background-position: center;
+  z-index: -1;
+  background-size: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: #6610f2;
+  color: white !important;
+}
+
+.font-nothing {
+  font-family: "Nothing You Could Do", cursive;
+}
+
+.font-clash {
+  font-family: "ClashDisplay-Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Bold";
+  src: url("./assets/fonts/ClashDisplay-Bold.woff2") format("woff2"),
+    url("./assets/fonts/ClashDisplay-Bold.woff") format("woff"),
+    url("./assets/fonts/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.aboutImage:before {
+  /* make  a rectangle rotated 45 degrees behind the element */
+  content: "";
+  bottom: 0;
+  border: 2px solid #6610f2;
+  left: 10rem;
+  height: 447px;
+  position: absolute;
+  transform: rotate(-3.208deg);
+  width: 45%;
+  background: #6610f2;
+  flex-shrink: 0;
+  margin-bottom: -30px;
+
+  z-index: -1;
+}
+
+.woman:before {
+  /* make  a rectangle rotated 45 degrees behind the element */
+  content: "";
+  bottom: 0;
+  border: 2px solid #6610f2;
+  left: 0.2rem;
+  height: 23.75rem;
+  border-radius: 50%;
+  position: absolute;
+  transform: rotate(-3.208deg);
+  width: 23.75rem;
+  background: #6610f2;
+  flex-shrink: 0;
+  margin-bottom: -6rem;
+  z-index: -1;
+}
+
+/* Media query for screens with a maximum width of 600 pixels (typical for mobile devices) */
+@media only screen and (max-width: 600px) {
+  .bannerImage {
+    height: 25rem;
+    width: 100%;
+    background: url(../assets/banner.jpg) lightgray 0px -140.651px / 100% 124.485%
+      no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .woman:before {
+    /* make  a rectangle rotated 45 degrees behind the element */
+    content: "";
+    bottom: 0;
+    border: 2px solid #6610f2;
+    left: -2rem;
+    height: 16rem;
+    border-radius: 50%;
+    position: absolute;
+    transform: rotate(-3.208deg);
+    width: 16rem;
+    background: #6610f2;
+    flex-shrink: 0;
+    margin-bottom: -6rem;
+    z-index: -1;
+  }
+
+  .man:before {
+    /* make  a rectangle rotated 45 degrees behind the element */
+    content: "";
+    top: 0;
+    border: 2px solid #6610f2;
+    right: -2;
+    height: 16rem;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 16rem;
+    background: #6610f2;
+    flex-shrink: 0;
+    margin-top: -4rem;
+    z-index: -1;
+  }
+}
+
+.man:before {
+  /* make  a rectangle rotated 45 degrees behind the element */
+  content: "";
+  top: 0;
+  border: 2px solid #6610f2;
+  right: 13rem;
+  height: 23.75rem;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 23.75rem;
+  background: #6610f2;
+  flex-shrink: 0;
+  margin-top: -4rem;
+  z-index: -1;
+}
+
+.overlay {
+  color: black;
+  mix-blend-mode: difference;
+}
+
+.overlay::before {
+  content: "";
+  /* filter: grayscale(100%); */
+
+  background: inherit;
+}
+
+.male-Image-Container {
+  background: url("./assets/male.jpg"), lightgray 50% / cover no-repeat;
+  /* background-blend-mode: difference; */
+  /* background: white; */
+
+  background-size: cover;
+}
+.female-Image-Container {
+  background: url("./assets/woman.jpg"), lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
